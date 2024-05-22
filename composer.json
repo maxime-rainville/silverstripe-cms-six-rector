@@ -1,0 +1,18 @@
+{
+    "name": "maxime-rainville/silverstripe-cms-six-rector",
+    "type": "rector-extension",
+    "license": "BSD-3-Clause",
+    "autoload": {
+        "psr-4": {
+            "MaximeRainville\\SilverstripeCmsSixRector\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Maxime Rainville",
+            "email": "maxime@silverstripe.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
