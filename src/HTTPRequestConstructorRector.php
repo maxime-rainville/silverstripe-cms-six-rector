@@ -1,6 +1,6 @@
 <?php
 
-namespace Utils\Rector\Rector;
+namespace MaximeRainville\SilverstripeCmsSixRector;
 
 use DeepCopy\f001\A;
 use PhpParser\Node;
