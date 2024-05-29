@@ -1,7 +1,7 @@
 <?php
 
 use Rector\Config\RectorConfig;
-use Utils\Rector\Rector\HTTPRequestConstructorRector;
+use MaximeRainville\SilverstripeCmsSixRector\HTTPRequestConstructorRector;
 
 return RectorConfig::configure()
     ->withRules([

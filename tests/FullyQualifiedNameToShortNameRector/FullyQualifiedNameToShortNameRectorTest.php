@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MaximeRainville\SilverstripeCmsSixRector\Tests\HTTPRequestConstructorRector;
+namespace MaximeRainville\SilverstripeCmsSixRector\Tests\FullyQualifiedNameToShortNameRector;
 
 use Iterator;
 use Rector\Testing\PHPUnit\AbstractRectorTestCase;
 
-final class HTTPRequestConstructorRectorTest extends AbstractRectorTestCase
+final class FullyQualifiedNameToShortNameRectorTest extends AbstractRectorTestCase
 {
     /**
      * @dataProvider provideData

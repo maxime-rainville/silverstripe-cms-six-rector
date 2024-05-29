@@ -1,0 +1,43 @@
+<?php
+namespace App;
+
+use SilverStripe\Control\Session;
+
+// Session constructor without argument
+new Session();
+
+// Session constructor with empty array
+new Session([]);
+
+// Session constructor with null
+new Session(null);
+
+$session = new Session(['something' => ['some' => 'value', 'another' => 'item']]);
+
+foobar(new Session(['something' => ['some' => 'value', 'another' => 'item']]));
+
+-----
+<?php
+namespace App;
+
+use SilverStripe\Control\Session;
+
+// Session constructor without argument
+new SilverStripe\Control\Session();
+
+// Session constructor with empty array
+new SilverStripe\Control\Session();
+
+// Session constructor with null
+new SilverStripe\Control\Session();
+
+$session = new SilverStripe\Control\Session();
+foreach (['something' => ['some' => 'value', 'another' => 'item']] as $sessionKey => $sessionValue) {
+    $session->set($sessionKey, $sessionValue);
+}
+
+$session = new SilverStripe\Control\Session();
+foreach (['something' => ['some' => 'value', 'another' => 'item']] as $sessionKey => $sessionValue) {
+    $session->set($sessionKey, $sessionValue);
+}
+foobar($session);

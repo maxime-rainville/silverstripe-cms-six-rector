@@ -1,0 +1,6 @@
+- Handle NullHTTPRequest
+- setIP does not exist on Symfony Request. There's no replacement.
+- Symfony reads the Headers directly from $_SERVER
+- Need to replace Silverstripe Session with Symfony Session
+- Need to initialise Session object
+  - We'll probably need a node visitor for that

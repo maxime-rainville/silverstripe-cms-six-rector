@@ -70,7 +70,7 @@ final class HTTPRequestConstructorRector extends AbstractRector
 
         $classReflection = $this->reflectionProvider->getClass($className);
 
-        if (!$classReflection->is(HTTPRequest::class) && !$classReflection->isSubclassOf(HTTPRequest::class)) {
+        if ($className !== HTTPRequest::class) {
             return null;
         }
 

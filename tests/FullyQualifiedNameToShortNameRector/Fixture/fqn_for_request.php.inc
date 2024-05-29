@@ -25,6 +25,6 @@ class Test {
         $postVars = ['password' => 'helloworld'];
         $body = "raw data";
 
-        $request = HTTPRequest::create($url, $httpMethod, array_merge($getVars, $postVars), [], [], [], $body);
+        $request = new HTTPRequest($httpMethod, $url, $getVars, $postVars, $body);
     }
 }
